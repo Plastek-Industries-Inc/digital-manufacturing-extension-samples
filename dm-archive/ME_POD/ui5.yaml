@@ -1,6 +1,6 @@
 specVersion: "4.0"
 metadata:
-  name: sap.ext.exampleplugins
+  name: com.sap.me.customoperationpod
 type: application
 server:
   customMiddleware:
@@ -13,6 +13,7 @@ server:
             - /resources
             - /test-resources
           url: https://ui5.sap.com
+          version: 1.38.59
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:
@@ -22,5 +23,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: sap.ext.exampleplugins
+        component: com.sap.me.customOperationPOD
         ui5Theme: sap_fiori_3

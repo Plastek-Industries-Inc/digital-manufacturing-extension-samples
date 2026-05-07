@@ -1,6 +1,6 @@
 specVersion: "4.0"
 metadata:
-  name: sap.ext.exampleplugins
+  name: sap.custom.assemblypod
 type: application
 server:
   customMiddleware:
@@ -22,5 +22,5 @@ server:
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:
-        component: sap.ext.exampleplugins
+        component: sap.custom.assemblypod
         ui5Theme: sap_fiori_3
